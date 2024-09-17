@@ -6,11 +6,14 @@ function CreaTabella() {
     for (let r = 0; r < righe; r++) {
         const tr = document.createElement('tr');
         for (let c = 0; c < colonne; c++) {
+
             const td = document.createElement('td');
+
             td.style.width = '100px';
             td.style.height = '100px';
-            td.style.border = '4px solid blue';
-            td.style.backgroundColor = 'white';
+            td.style.border = '1 px solid white';
+            td.style.borderRadius = '100px'
+            td.style.backgroundColor = 'gray';
 
             td.addEventListener('click', function() {
                 this.style.backgroundColor =  'yellow' ;
@@ -25,7 +28,7 @@ function CreaTabella() {
 
 }
 
-window.onload = CreaTabella;
+CreaTabella();
 
 
 
